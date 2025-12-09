@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT ME</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        :root {
+            --accent-color: orange; 
+            --light-background: #fff8e1; 
+            --dark-text: #333;
+        }
+
+        .contact-form-box {
+            margin-top: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #fcfcfc;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        .contact-form-box h3 {
+            color: var(--accent-color, orange);
+            margin-bottom: 15px;
+            text-align: center;
+            font-size: 1.4em;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            font-weight: 600;
+            color: var(--dark-text, #333);
+        }
+
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form select,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .contact-form textarea {
+            resize: vertical;
+        }
+
+        .submit-button {
+            background-color: var(--accent-color, orange);
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            font-weight: 600;
+            transition: background-color 0.3s;
+            width: 100%;
+        }
+
+        .submit-button:hover {
+            background-color: #ff8c00;
+        }
+
+        .biodata-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            font-size: 0.95em;
+        }
+
+        .biodata-table th, .biodata-table td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .biodata-table th {
+            background-color: var(--light-background, #fff8e1); 
+            color: var(--dark-text, #333);
+            width: 35%; 
+            font-weight: 700;
+        }
+
+        .biodata-table tr:hover {
+            background-color: #ffe0b2; 
+        }
+    </style>
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo">𝓐𝓝𝓘𝓢𝓐</div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html"class="active">ABOUT</a></li>
+                <li><a href="education.html">EDUCATION</a></li>
+                <li><a href="skills.html">SKILLS</a></li>
+                <li><a href="experience.html">EXPERIENCE</a></li>
+                <li><a href="activities.html">ACTIVITIES</a></li> 
+            </ul>
+        </nav>
+        <div class="language-select">EN</div>
+    </header>
+
+    <main class="main-content-area">
+        <h1>About Me & Personal Profile</h1>
+        
+        <div class="about-flex">
+            
+            <div class="flex-left">
+                <img src="anisa.png" alt="A professional portrait of Nur Syahirah Anisa" class="profile-photo">
+                
+                <h2>Brief Introduction</h2>
+                <p>
+                    Hello, I am <span class="highlight-text">Nur Syahirah Anisa</span>, a dedicated student of Bachelor of Information Science (Hons.) Library Management at Universiti Teknologi Mara (UiTM).
+                </p> 
+
+                <hr>
+
+                <h2>Contact</h2>
+                <ul style="list-style-type: none; padding: 0;">
+                    <li style="margin-bottom: 5px;">📞 019 594 0124</li>
+                    <li style="margin-bottom: 5px;">📧 nursyahirahanisa@gmail.com</li>
+                    <li>🏠 No 20, Lorong 5, Taman Seri Bintong Maju, Jalan Wang Ulu, 01000, Kangar Perlis</li>
+                </ul>
+
+                <div class="contact-form-box"> 
+                    <h3>✉️ Contact Me</h3>
+                    <form action="mailto:nursyahirahanisa@gmail.com" method="POST" enctype="text/plain" class="contact-form">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                        
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                        
+                        <button type="submit" class="submit-button">Send Message</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="flex-right">
+                
+                <h2>Profile Summary</h2>
+                <p>
+                    A motivated and responsible student who is eager to gain real working experiences. Good at managing tasks, communicating with others, and learning new things. Always committed to doing the best in every responsibility given.
+                </p>
+
+                <h2>My Biodata</h2>
+                <table class="biodata-table">
+                    <tr>
+                        <th>Full Name</th>
+                        <td>Nur Syahirah Anisa binti Nor Hisham</td>
+                    </tr>
+                    <tr>
+                        <th>I/C Number</th>
+                        <td>030210-09-0188</td>
+                    </tr>
+                    <tr>
+                        <th>Date of Birth</th>
+                        <td>10 Febuary 2003</td>
+                    </tr>
+                    <tr>
+                        <th>Age</th>
+                        <td>22</td>
+                    </tr>
+                    <tr>
+                        <th>Nationality</th>
+                        <td>Malaysian</td>
+                    </tr>
+                    <tr>
+                        <th>Race</th>
+                        <td>Malay</td>
+                    </tr>
+                    <tr>
+                        <th>Religion</th>
+                        <td>Islam</td>
+                    </tr>
+                    <tr>
+                        <th>Marital Status</th>
+                        <td>Single</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        
+    </main>
+
+    <footer class="site-footer">
+        <div class="disclaimer">
+            <p>&copy; 2025 [NUR SYAHIRAH ANISA]. All Rights Reserved.</p>
+            <p>Recommended Browser: Chrome | Resolution: 1920x1080.</p>
+            <p>Last Updated: December 7, 2025</p>
+        </div>
+    </footer>
+
+</body>
+</html>

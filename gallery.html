@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GALLERY</title>
+    <link rel="stylesheet" href="style.css"> 
+    
+    <style>
+        :root {
+            --accent-color: orange; 
+            --light-background: #fff8e1; 
+            --dark-text: #333;
+        }
+
+        .gallery-main-container {
+            background-color: #ffffff; 
+            padding: 30px;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+        }
+        
+        .gallery-main-container h1, .gallery-main-container h2 {
+            color: var(--dark-text);
+            text-align: center;
+        }
+
+        .gallery-section h2 {
+            text-align: center;
+            color: var(--accent-color); 
+            background-color: var(--light-background); 
+            padding: 10px;
+            border-radius: 8px;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            border-left: 5px solid var(--accent-color);
+        }
+        
+        .image-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px; 
+        }
+
+        .image-item {
+            flex: 0 0 calc(33.33% - 14px); 
+            max-width: calc(33.33% - 14px); 
+            text-align: center;
+            margin-bottom: 20px;
+    
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            background-color: #fff;
+        }
+
+        .image-item img, .image-item video {
+            width: 100%;
+            height: 180px; 
+            object-fit: cover;
+            border-radius: 6px;
+            border: 2px solid var(--accent-color);
+            transition: transform 0.2s;
+        }
+
+        .image-item img:hover {
+            transform: scale(1.03);
+            opacity: 0.9;
+        }
+
+        @media (max-width: 768px) {
+            .image-item {
+                flex: 0 0 calc(50% - 10px);
+                max-width: calc(50% - 10px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .image-item {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+            .gallery-container {
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo">𝓐𝓝𝓘𝓢𝓐</div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="education.html">EDUCATION</a></li>
+                <li><a href="skills.html">SKILLS</a></li>
+                <li><a href="experience.html">EXPERIENCE</a></li>
+                <li><a href="activities.html">ACTIVITIES</a></li>
+            </ul>
+        </nav>
+        <div class="language-select">EN</div>
+    </header>
+
+    <main class="main-content-area">
+        <h1>Work Highlights</h1>
+        
+        <div class="gallery-main-container">
+            <p style="text-align: center; margin-bottom: 30px;">Explore my gallery to discover snapshots of my meaningful experiences that have shaped my skills and passions.</p>
+
+            <div class="gallery-section" id="work-proof">
+                <h2>Cafe Harumanis</h2>
+                <div class="image-container">
+                    
+                    <div class="image-item">
+                        <img src="p1.jpg" alt="Cafe Harumanis Work Photo">
+                    </div>
+
+                    <div class="image-item">
+                        <img src="p2.jpg" alt="Takoyaki Stall Operation">
+                    </div>
+
+                    <div class="image-item">
+                        <img src="p3.jpg" alt="Takoyaki Stall Operation">
+                    </div>
+
+            </div>
+
+            <div class="gallery-section" id="digital-skills">
+                <h2>Takoyaki Stall</h2>
+                <div class="image-container">
+                    
+                    <div class="image-item">
+                        <img src="t1.jpg" alt="Proof of Image Editing Work">
+                    </div>
+                    
+                    <div class="image-item">
+                        <img src="t2.jpg" alt="Web Design Layout Sketch">
+                    </div>
+                    
+                    <div class="image-item">
+                        <img src="t3.jpg" alt="Web Design Layout Sketch">
+                    </div>
+                
+                </div>
+            </div>
+            
+        </div>
+        
+    </main>
+
+    <footer class="site-footer">
+        <div class="disclaimer">
+            <p>&copy; 2025 [NUR SYAHIRAH ANISA]. Declares copyright. All Rights Reserved.</p>
+            <p>Recommended Browser: Chrome | Resolution: 1920x1080.</p>
+            <p>Last Updated: December 7, 2025</p>
+        </div>
+    </footer>
+
+</body>
+</html>

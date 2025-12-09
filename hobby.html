@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY HOBBIES</title>
+    <link rel="stylesheet" href="style.css"> 
+    
+    <style>
+        :root {
+            --accent-color: orange; 
+            --light-background: #fff8e1; 
+            --dark-text: #333;
+        }
+        
+        .hobby-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+            padding: 20px;
+            border: 1px solid #eee;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+        
+        .hobby-item:nth-child(even) {
+            flex-direction: row-reverse; 
+            background-color: var(--light-background);
+        }
+
+        .hobby-item img {
+            width: 20%;
+            height: auto;
+            max-width: 100px;
+            border-radius: 8px;
+            border: 2px solid var(--accent-color);
+            margin: 0 20px;
+        }
+
+        .hobby-description {
+            width: 60%;
+            padding: 0 10px;
+        }
+        
+        .hobby-description h3 {
+            color: var(--accent-color);
+            border-bottom: 2px solid var(--light-background);
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+
+    .hobby-item img, .hobby-item video { 
+    width: 40%;
+    height: auto;
+    max-width: 300px;
+    border-radius: 8px;
+    border: 2px solid var(--accent-color);
+    margin: 0 20px;
+}
+
+
+        @media (max-width: 768px) {
+            .hobby-item, .hobby-item:nth-child(even) {
+                flex-direction: column;
+                text-align: center;
+            }
+            .hobby-item img {
+                width: 80%;
+                margin: 15px 0;
+            }
+            .hobby-description {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo">𝓐𝓝𝓘𝓢𝓐</div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="education.html">EDUCATION</a></li>
+                <li><a href="skills.html">SKILLS</a></li>
+                <li><a href="experience.html">EXPERIENCE</a></li>
+                <li><a href="activities.html">ACTIVITIES</a></li>
+            </ul>
+        </nav>
+        <div class="language-select">EN</div>
+    </header>
+
+    <main class="main-content-area">
+        <h1>My Personal Hobbies & Leisure Activities</h1>
+        
+        <p style="text-align: center; margin-bottom: 40px; color: #555;">These activities help me relax, stay creative, and balance my academic life.</p>
+
+        <div class="hobby-item">
+            <div class="hobby-description">
+                <h3>📖 READING</h3>
+                <p>Reading, especially fictional books and short stories, is my favorite way to escape and expand my perspective. It significantly enhances my vocabulary and analytical skills.</p>
+                <p style="margin-top: 10px;">Favorite Genre: Fantasy & Mystery.</p>
+                <p>Explore my reading list on <a href="https://www.goodreads.com/" target="_blank" class="highlight-text">Goodreads</a>.</p>
+            </div>
+            <img src="book.jpg" alt="A photo of me reading a book">
+        </div>
+        
+        <hr>
+
+        <div class="hobby-item">
+            <div class="hobby-description">
+                <h3>🛍️ SHOPPING</h3>
+                <p>Shopping is a fun way to keep up with trends and practice budget management. I mainly enjoy online shopping for clothes and accessories, often comparing prices and reviews thoroughly before making a purchase.</p>
+                <p style="margin-top: 10px;">Favorite Platform: Shopee & TikTok.</p>
+                <p>Shopping at <a href="https://shopee.com.my/" target="_blank" class="highlight-text">Shopee Malaysia</a>.</p>
+            </div>
+            <img src="sh.jpg" alt="parcel">
+        </div>
+
+        <hr>
+
+        <div class="hobby-item">
+    <div class="hobby-description">
+        <h3>🎧 LISTEN TO MUSIC</h3>
+        <p>Listening to music is essential for my daily motivation. Whether I'm studying or relaxing, the right soundtrack can greatly influence my mood and productivity. I usually listen using Spotify or YouTube Music.</p>
+        <p style="margin-top: 10px;">Favorite Genre: Pop, K-Pop, & Instrumental.</p>
+        <p>See More <a href="https://open.spotify.com/" target="_blank" class="highlight-text">Spotify</a>.</p>
+    </div>
+    
+    <video controls poster="ald1.jpeg" style="width: 40%; height: 250px; object-fit: cover; max-width: 300px; border-radius: 8px; border: 2px solid var(--accent-color); margin: 0 20px;">
+        <source src="ald1mv.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="disclaimer">
+            <p>&copy; 2025 [NUR SYAHIRAH ANISA]. Declares copyright. All Rights Reserved.</p>
+            <p>Recommended Browser: Chrome | Resolution: 1920x1080.</p>
+            <p>Last Updated: December 7, 2025</p>
+        </div>
+    </footer>
+
+</body>
+</html>
